@@ -2,7 +2,7 @@
 This repository contains all the exercises of the FULP employability campus.
 
 ## BLOCK 1 - FRONTEND
-### - JS introduction
+- ###  JS introduction
 ### · JS strings & functions
 ### · HTML introduction
 ### · CSS introduction

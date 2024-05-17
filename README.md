@@ -9,6 +9,13 @@ This repository contains all the exercises of the FULP employability campus.
 ```
 $${\color{red}Red}$$
 $${\color{green}Green}$$
+$${\color{red}Red}$$	$${\color{red}Red}$$
+$${\color{green}Green}$$	$${\color{green}Green}$$
+$${\color{lightgreen}Light \space Green}$$	$${\color{lightgreen}Light \space Green}$$
+$${\color{blue}Blue}$$	$${\color{blue}Blue}$$
+$${\color{lightblue}Light \space Blue}$$	$${\color{lightblue}Light \space Blue}$$
+$${\color{black}Black}$$	$${\color{black}Black}$$
+$${\color{white}White}$$
 
 ## BLOCK 1 - FRONTEND
 - ###  JS introduction

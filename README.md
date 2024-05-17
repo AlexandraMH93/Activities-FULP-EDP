@@ -8,6 +8,7 @@ This repository contains all the exercises of the FULP employability campus.
 @@ text in purple (and bold)@@
 ```
 $${\color{red}Red}$$
+$${\color{green}Green}$$
 
 ## BLOCK 1 - FRONTEND
 - ###  JS introduction

@@ -1,6 +1,6 @@
 # Activities-FULP-EDP
 This repository contains all the exercises of the FULP employability campus.
-
+<span style="color:orange">orange</span>  
 ## BLOCK 1 - FRONTEND
 - ###  JS introduction
 > #### Exercises: You have 3 iterations to do. Each iteration is within a folder `iterations` that contains two files: `index.html` and `script.js`.

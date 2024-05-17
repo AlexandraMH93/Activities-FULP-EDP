@@ -1,20 +1,13 @@
 # Activities-FULP-EDP
 This repository contains all the exercises of the FULP employability campus.
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-$${\color{red}Red}$$
 
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+:yellow_heart: Javascript :orange_heart: HTML :blue_heart: CSS
+
+
 
 ## BLOCK 1 - FRONTEND
-<details><summary>
-- ###  JS introduction
-> #### Exercises: You have 3 iterations to do. Each iteration is within a folder `iterations` that contains two files: `index.html` and `script.js`.
+<details><summary>:yellow_heart: JS introduction</summary>
+- Exercises: You have 3 iterations to do. Each iteration is within a folder `iterations` that contains two files: `index.html` and `script.js`.
 
 The HTML file simply loads the JavaScript file where you will code your solution code.
 ```html
@@ -85,22 +78,63 @@ Go to [lorem ipsum generator](https://loremipsum.io) and:
 1. Generate 3 paragraphs. Store the text in a `lorem` variable
 1. Make your program count the number of words in the `lorem`
 1. Make your program count the number of times the Latin word `et` appears in `lorem`
-</summary></details>
+</details>
 
-- ### JS strings & functions
-- ### HTML introduction
-- ### CSS introduction
-- ### JS arrays
-- ### JS objects
-- ### JS functional arrays
-- ### HTML tables & forms
-- ### JS under the hood
-- ### CSS make it pretty
-- ### JS prototypes
-- ### Web API DOM
-- ### CSS animations 
-- ### CSS responsive - flexbox
-- ### Git branches
+<details><summary>:yellow_heart: JS strings & functions</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:orange_heart: HTML introduction</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:blue_heart: CSS introduction</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart: JS arrays</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart: JS objects</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart: JS functional arrays</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:orange_heart: HTML tables & forms</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart: JS under the hood</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:blue_heart: CSS make it pretty</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart: JS prototypes</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart::orange_heart: Web API DOM</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:yellow_heart: JS prototypes</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:blue_heart: CSS animations</summary>
+  dsjhfkjah
+</details>
+
+<details><summary>:blue_heart: CSS responsive - flexbox</summary>
+  dsjhfkjah
+</details>
 
 ## BLOCK 2 - BACKEND
 ## BLOCK 3 - FULLSTACK

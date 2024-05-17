@@ -8,18 +8,11 @@ This repository contains all the exercises of the FULP employability campus.
 @@ text in purple (and bold)@@
 ```
 $${\color{red}Red}$$
-$${\color{green}Green}$$
-$${\color{red}Red}$$	$${\color{red}Red}$$
-$${\color{green}Green}$$	$${\color{green}Green}$$
-$${\color{lightgreen}Light \space Green}$$	$${\color{lightgreen}Light \space Green}$$
-$${\color{blue}Blue}$$	$${\color{blue}Blue}$$
-$${\color{lightblue}Light \space Blue}$$	$${\color{lightblue}Light \space Blue}$$
-$${\color{black}Black}$$	$${\color{black}Black}$$
-$${\color{white}White}$$
 
 $${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
 
 ## BLOCK 1 - FRONTEND
+<details><summary>
 - ###  JS introduction
 > #### Exercises: You have 3 iterations to do. Each iteration is within a folder `iterations` that contains two files: `index.html` and `script.js`.
 
@@ -92,7 +85,7 @@ Go to [lorem ipsum generator](https://loremipsum.io) and:
 1. Generate 3 paragraphs. Store the text in a `lorem` variable
 1. Make your program count the number of words in the `lorem`
 1. Make your program count the number of times the Latin word `et` appears in `lorem`
-
+</summary></details>
 
 - ### JS strings & functions
 - ### HTML introduction

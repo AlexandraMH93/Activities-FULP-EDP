@@ -17,6 +17,8 @@ $${\color{lightblue}Light \space Blue}$$	$${\color{lightblue}Light \space Blue}$
 $${\color{black}Black}$$	$${\color{black}Black}$$
 $${\color{white}White}$$
 
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+
 ## BLOCK 1 - FRONTEND
 - ###  JS introduction
 > #### Exercises: You have 3 iterations to do. Each iteration is within a folder `iterations` that contains two files: `index.html` and `script.js`.

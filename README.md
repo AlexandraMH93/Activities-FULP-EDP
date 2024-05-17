@@ -1,15 +1,12 @@
 # Activities-FULP-EDP
 This repository contains all the exercises of the FULP employability campus.
-<!DOCTYPE html>
-<html>
-  <body>
-    <script src="script.js"></script>
-    <span style="color:orange">orange</span>  
-<span style="color:orange">orange</span>  
-<span style="color:lime">lime</span>  
-<font color='red'>rojo</font>
-  </body>
-</html>
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 ## BLOCK 1 - FRONTEND
 - ###  JS introduction

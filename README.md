@@ -205,11 +205,128 @@ Divide the problem into smaller problems by using functions and conquer the worl
 </details>
 
 <details><summary>:orange_heart: HTML introduction</summary>
-  dsjhfkjah
+ 
+  ## Exercise
+
+### Starter code
+
+We've given you the HTML/CSS needed to get going in the [starter-code](starter-code) folder. You already have all the CSS to solve the exercise but you need to pay attention to the HTML structure carefully!
+
+The end result should be something similar to:
+
+![](https://github.com/rebootacademy-labs/LAB-105-HTML-introduction/blob/main/lab-html_introduction_solution.png)
+
+#### Head
+- Add a page title: `Wikipedia - Web Developer`
+- Add a link to the stylesheet `styles.css`
+
+#### Header
+- Add an image with source `https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png`
+- Add a heading (h1) with the text `Web developer` and a link to `https://en.wikipedia.org/wiki/Web_developer`
+- Add a div (with class `copy`) and the text: `From Wikipedia, the free encyclopedia`
+
+#### Section / intro
+
+- Add a parragraph with the content:
+```
+A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. The applications typically use HTML, CSS and JavaScript in the client, PHP, ASP.NET (C#) or Java in the server, and http for communications between client and server. A web content management system is often used to develop and maintain web applications.
+```
+#### Aside: Table of Contents
+
+- Title (h3): `Contents`
+- Ordered list with:
+  - Link to `#section1` with the text: `Nature of employment`
+  - Link to `#section2` with the text: `Type of work performed`
+  - Link to `#section3` with the text: `Educational and licensure requiremeli>`
+  - Link to `#section4` with the text: `See also`
+  - Link to `#section5` with the text: `References`
+  - Link to `#section6` with the text: `External links`
+
+#### Section1
+- Title (h2): `Nature of employment`
+- Parragraph with the text:
+```
+Web developers are found working in various types of organizations, including large corporations and governments, small and medium-sized companies, or alone as freelancers. Some web developers work for one organization as a permanent full-time employee, while others may work as independent consultants, or as contractors for an agency or at home personal use. Web developers typically handle both server-side and front-end logic. This usually involves implementing all the visual elements that users see and use in the web applications or use, as well as all the web services that are necessary to power the usage of there developing work. Salaries vary depending on the type of development work, location, and level of seniority.
+```
+
+#### Section2
+- Title (h2): `Type of work performed`
+
+```
+May specialize in one or more of these tiers - or may take a more interdisciplinary role. A web developer is usually classified as a Front-end web development or a Back-End Web Developer. For example, in a two-person team, one developer may focus on the technologies sent to the client such as HTML, JavaScript, CSS, ReactJs or AngularJS and on the server-side frameworks (such as Perl, Python, Ruby, PHP, Java, ASP, ASP.NET, Node.js) used to deliver content and scripts to the client. Meanwhile, the other developer might focus on the interaction between server-side frameworks, the webserver, and a database system. Further, depending on the size of their organization, the aforementioned developers might work closely with a content creator/copywriter, marketing adviser, user experience designer, web designer, web producer, project manager, software architect, or database administrator - or they may be responsible for such tasks as web design and project management themselves.
+```
+
+#### Section3
+- Title (h2): `Educational and licensure requirements`
+- Parragraph with the text:
+```
+There are no formal educational or licensure requirements to become a web developer. However, many colleges and trade schools offer coursework in web development. There are also many tutorials and articles, which teach web development, freely available on the web - for example Basic JavaScript
+```
+- Parragraph with the text:
+```
+Even though there are no formal educational requirements, dealing with web developing projects requires those who wish to be referred to as web developers to have advanced knowledge/skills in:
+```
+- Unordered list with:
+  - `HTML/XHTML, CSS, JavaScript and jQuery.`
+  - `Server/client side architecture like all or some of the above mentioned.`
+  - `Programming/Coding/Scripting in one of the many server-side languages or frameworks (e.g., Perl, Python, Ruby, PHP, Go, CFML - ColdFusion, Java, ASP, ASP.NET, Node.js)`
+  - `Ability to utilize a database`
+  - `Creating single page application with use of front-end tools such as EmberJS,[1] ReactJS[2] or VueJS[3]`
+
+#### Section4
+- Title (h2): `See also`
+- Unordered list with:
+  - `Website design`
+  - `Web development`
+  - `Web engineering`
+  - `Software developer`
+
+#### Section5
+- Title (h2): `References`
+- Ordered list with citations:
+  - Link to `https://emberjs.com/` with the text: `EmberJS website`, followed by the text `EmberJS` emphasized.
+  - Link to `https://facebook.github.io/react/` with the text: `ReactJS website`, followed by the text `ReactJS` emphasized.
+  - Link to `https://vuejs.org` with the text: `VueJS website`, followed by the text `VueJS` emphasized.
+
+#### Section6
+- Title (h2): `External links`
+- Ordered list with citations:
+  - The US Department of Labor's description of Web Developers
+  - World Wide Web Consortium (W3C)
+
+
+#### Footer
+- Image with source `https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/80px-Wikiversity-logo.svg.png`
+- Parragraphs with:
+```
+This page was last edited on 28 August 2019, at 04:59 (UTC).
+```
+```
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+```
+#### Bonus
+- Using `id="IdName"` Add links to the last element of Section 3. ie: `EmberJS,[1]` to the correspondent citations in Section 5.
+
+---
 </details>
 
 <details><summary>:blue_heart: CSS introduction</summary>
-  dsjhfkjah
+  
+  ## Starter code
+
+You will be working in the `apple-pie-starter-code` folder. The starter-code contains all the files, images, and text content needed to create the page. The text is in the `index.html`, and a css file is created in `main.css`.
+
+## Deliverable
+
+Please find a screenshot of the expected results below:
+
+
+
+## Bonus
+
+If you feel you need more practice, in the `starter-code` you will find `extra-french-soup` folder. There you will find `expected-result.md` file where you can see what is expected from you to build. This folder has the same structure as the the `apple-pie` one so follow the same steps.
+
+---
 </details>
 
 <details><summary>:yellow_heart: JS arrays</summary>

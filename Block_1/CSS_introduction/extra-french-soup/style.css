@@ -1,0 +1,70 @@
+/*Some necessary adjustments*/
+body {
+    margin: 0;
+}
+
+/*Import the font and set the default size*/
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#title {
+    position: relative;
+    line-height: 100vh;
+    margin: 0;
+    /*vh visualizador*/
+}
+
+header {
+    color: white;
+    font-size: 50px;
+    background-image: url("../extra-french-soup/images/soup.jpg");
+    text-align: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.section {
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#section1,
+#section2 {
+    border-bottom: 1px solid gray;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    counter-reset: contador 0;
+}
+
+ul li::before {
+    content: "-"
+}
+
+ol li {
+    counter-increment: contador 1;
+}
+
+ol li::before {
+    content: counter(contador)") ";
+
+
+}

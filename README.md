@@ -319,7 +319,7 @@ You will be working in the `apple-pie-starter-code` folder. The starter-code con
 ## Deliverable
 
 Please find a screenshot of the expected results below:
-
+![Aple pie](Block_1/CSS_introduction/apple-pie/images/apple-pie.jpg)
 
 
 ## Bonus

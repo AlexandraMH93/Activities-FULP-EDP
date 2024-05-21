@@ -23,35 +23,26 @@
   function nicknameGenerator(name) {
     return name.length < 4 ? 'Error: Name too short' : /[aeiou]/i.test(name[2]) ? name.slice(0, 4) : name.slice(0, 3)
   }
-  
+
   console.log(nicknameGenerator('Robert'))
   console.log(nicknameGenerator('Jeannie'))
   console.log(nicknameGenerator('Ale'))
   
   //Iteration 3
   
-  /*function highAndLow(string){
+  function highAndLow(string) {
     let arrayOfNumbers = string.split(' ')
-    let highest = arrayOfNumbers[0]
-    let lowest = arrayOfNumbers[0]
-    console.log(arrayOfNumbers)
-    for (let i=0; i < arrayOfNumbers.length; i++){
-      if(parseInt(arrayOfNumbers[i]) < lowest){
-        lowest = parseInt(arrayOfNumbers[i])
-      } else if (parseInt(arrayOfNumbers[i]) > highest){
-        highest = parseInt(arrayOfNumbers[i])
-      }
-    }
+    let highest = Math.max(...arrayOfNumbers)
+    let lowest = Math.min(...arrayOfNumbers)
     return highest + ' ' + lowest
   }
-  const result8 = highAndLow("1 2 3 4 5")
-  const result9 = highAndLow("1 2 -3 4 5")
-  console.log(result8)
-  console.log(result9)
+
+  console.log(highAndLow("1 2 3 4 5"))
+  console.log(highAndLow("1 2 -3 4 5"))
   
   //Iteration 4
   
-  function reverse(longString){
+  /*function reverse(longString){
     let arrayOfWords = longString.split(' ')
     let newArr = []
     for (let i = 0; i < arrayOfWords.length; i++) {

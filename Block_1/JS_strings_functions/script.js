@@ -18,28 +18,19 @@
   console.log(noVowels('reboot'))
   console.log(noVowels('HELLO')) 
   
-/*   //Iteration 2
-  
-  function nickname(name){
-    let nick = ''
-    if (name.length < 4) return 'Error: Name too short'
-    if (name[2] === 'a' || name[2] === 'e' || name[2] === 'i' || name[2] === 'o' || name[2] === 'u' ){
-      nick = name.slice(0, 4) //coge desde la primera letra hasta la cuarta pero sin coger la última
-    }else{
-      nick = name.slice(0,3)
-    }
-    return nick
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Iteration 2
+  function nicknameGenerator(name) {
+    return name.length < 4 ? 'Error: Name too short' : /[aeiou]/i.test(name[2]) ? name.slice(0, 4) : name.slice(0, 3)
   }
-  const result5 = nickname('Robert')
-  const result6 = nickname('Jeannie')
-  const result7 = nickname('Ale')
-  console.log(result5)
-  console.log(result6)
-  console.log(result7)
+  
+  console.log(nicknameGenerator('Robert'))
+  console.log(nicknameGenerator('Jeannie'))
+  console.log(nicknameGenerator('Ale'))
   
   //Iteration 3
   
-  function highAndLow(string){
+  /*function highAndLow(string){
     let arrayOfNumbers = string.split(' ')
     let highest = arrayOfNumbers[0]
     let lowest = arrayOfNumbers[0]

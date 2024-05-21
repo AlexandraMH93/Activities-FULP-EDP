@@ -41,28 +41,21 @@
   console.log(highAndLow("1 2 -3 4 5"))
   
   //Iteration 4
-  
-  /*function reverse(longString){
-    let arrayOfWords = longString.split(' ')
-    let newArr = []
-    for (let i = 0; i < arrayOfWords.length; i++) {
-      if (arrayOfWords[i] !== ' ' && arrayOfWords[i] !== '\n' && arrayOfWords[i] !== '\t' && arrayOfWords[i] !== '') {
-        newArr.unshift(arrayOfWords[i])
-      }
-    }
-    return newArr.join(' ')
+
+  function reverse(longString) {
+    return longString.split(/\s+/).filter(Boolean).reverse().join(' ') //el split te separa por todo tipo de espacios y el filter te quita los elementos vacíos
   }
-  const result10 = reverse("Hello      World")
-  const result11 = reverse('Hi    There.')
-  console.log(result10)
-  console.log(result11)
+  
+  console.log(reverse('  hello   world  '));
+  console.log(reverse("Hello      World"))
+  console.log(reverse('Hi    There.'))
   
   //Bonus
   
   //Iteration 1
   
   //Iteration 1.1
-  function rmvFirstAndLastChar(string) {
+ /* function rmvFirstAndLastChar(string) {
     return string.slice(1,-1)
   }
   

@@ -472,7 +472,126 @@ NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array 
 </details>
 
 <details><summary>:yellow_heart: JS functional arrays</summary>
-  dsjhfkjah
+
+  ## Starter code
+
+You have to solve the different problems in the `starter-code/index.js` file. This Javascript file is included in the `starter-code/index.html`. 
+
+You can easily open the HTML in Chrome, by clicking the Live Server button located in the bottom-right corner of VSCode.
+
+After you open it, you can open the `Chrome Developer Tools` and see the `console.log`  of your exercises.
+
+
+
+## **RULES**
+
+ - All your functions must be [pure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
+ - No more than 10 lines per function
+
+
+---
+## Iteration 1
+
+Create the following functions:
+
+### 1.1/ **whoIsOlderThan(people, age)**
+
+This function have to return a new array with people older than `age` argument.
+
+```js
+var people = [
+  {name : "Luis", age : 20},
+  {name : "Luigi", age : 14},
+  {name : "Mario", age : 25},
+]
+e.g. whoIsOlderThan(people, 20)  =>   [ { name : "Mario", age : 25 } ] 
+```
+
+### 1.2/ **getEmailsOfOlderThanAnAge(people, age)**
+
+This function have to return a new array with the emails of people older than `age` argument.
+
+```js
+var people = [
+  {name : "Luis", age : 20, email : "luis@gmail.com"},
+  {name : "Luigi", age : 14, email : "luigi@gmail.com"},
+  {name : "Mario", age : 25, email : "mario@gmail.com"},
+]
+e.g. getEmailsOfOlderThanAnAge(people, 15)  =>   [ "luis@gmail.com", "mario@gmail.com" ];
+```
+
+### 1.3/ **getTheSumOfAges(people)**
+
+This function have to return the sum of all the `age` attributes of people.
+
+```js
+var people = [
+  {name : "Luis", age : 20, email : "luis@gmail.com"},
+  {name : "Luigi", age : 14, email : "luigi@gmail.com"},
+  {name : "Mario", age : 25, email : "mario@gmail.com"},
+]
+e.g. getTheSumOfAges(people)  =>  59
+```
+
+---
+
+## Iteration 2 - Who is online or offline?
+
+You have a chat application and you want to show your users which one of their friends are online and available to chat!
+
+Given an input of an array of objects containing usernames, status and time since last activity (in seconds), create a function that receive another argument `status` to only return the names of these people.
+
+To use this function, you must follow the example below to call it 
+```js
+whoIsInThisStatus([
+  {
+    username: 'David',
+    status: 'online',
+    lastActivity: 600
+  }, {
+    username: 'Lucy', 
+    status: 'offline',
+    lastActivity: 2320
+  }, {
+    username: 'Bob', 
+    status: 'online',
+    lastActivity: 4320
+  }
+], "online")
+```
+The corresponding output should look as follows:
+```js
+[ "David", "Bob" ]
+```
+
+Finally, if you have no friends in your chat application, the input will be an empty array []. In this case you should return an empty array too []
+
+
+--- 
+
+
+## Bonus
+
+**Extra exercise**
+
+Create a function `getBestStudents`  that takes an array of students. The function must return an array with the emails and the average of the students. These students must have a average value of 9 or more in their subjects. The output have to be orderer by average mark.
+
+
+For example:
+
+```js
+getBestStudents([
+  {name : "Luis", age : 20, email : "luis@gmail.com", subjectsMarks : [9, 8, 10, 5 , 10]},
+  {name : "Luigi", age : 14, email : "luigi@gmail.com", subjectsMarks : [9, 8, 10, 9 , 10]},
+  {name : "Mario", age : 25, email : "mario@gmail.com", subjectsMarks : [9, 10, 10, 9, 10]},
+])
+// returns [
+//  {email : "mario@gmail.com", average : 9.6 }, 
+//  {email : "luis@gmail.com", average : 9.2 }
+// ]
+```
+---
+
 </details>
 
 <details><summary>:orange_heart: HTML tables & forms</summary>

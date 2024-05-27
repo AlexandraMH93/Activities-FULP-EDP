@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./script.js" defer></script>
+  <title>Reboot Academy shopping center</title>
+</head>
+
+<body>
+  <header>
+    <h1>Reboot Academy Shopping Center</h1>
+  </header>
+
+  <main id="main">
+    <div id="product1" class="items">
+      <span class="productName">Camiseta</span>
+      <span class="unitCost">25</span>
+      <span>
+        <label for="units">QTY</label>
+        <input type="text" value="0" class="units">
+      </span>
+      <span class="totalPrice">1€</span>
+      <span><button type="button" class="btn btn-delete">Delete</button></span>
+    </div>
+    <div id="product2" class="items">
+      <span class="productName">Pantalones</span>
+      <span class="unitCost">10</span>
+      <span>
+        <label for="units">QTY</label>
+        <input type="text" value="0" class="units">
+      </span>
+      <span class="totalPrice">1€</span>
+      <span><button type="button" class="btn btn-delete">Delete</button></span>
+    </div>
+  </main>
+  
+  <footer >
+    <div>
+      <label for="newProductName">Product Name</label>
+      <input type="text" id="newProductName">
+      <label for="newPrice">Price</label>
+      <input type="text" id="newPrice">
+      <button type="button" id="createBtn">Create</button>
+    </div>
+    <div>
+      <button type="button" id="price" class="quantity btn btn-success">Calculate Prices</button>
+    </div>
+    <div ><h2>Total price: <span id="total">0</span> €</h2></div>
+  </footer>
+
+</body>
+</html>

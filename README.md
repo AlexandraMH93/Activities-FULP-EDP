@@ -1,5 +1,5 @@
 # Activities-FULP-EDP
-This repository contains all the exercises of the FULP employability campus.
+This repository contains all the exercises of the FULP employability campus. There are three blocks that are divided by front-end, back-end and full-stack.
 
 :yellow_heart: Javascript :orange_heart: HTML :blue_heart: CSS
 
@@ -754,15 +754,160 @@ getBestStudents([
 </details>
 
 <details><summary>:orange_heart: HTML tables & forms</summary>
-  dsjhfkjah
+  
+ ## Starter code
+
+You will be working in the `starter-code` folder. You have two separate files: `forms.html` and `tables.html`.
+
+In this exercise you will only have **one css file**: `main.css` so you'll have to make sure that the css you write will not affect the other file.
+
+To preview your work, click on the Live Server button that is located on the bottom-right corner of VSCode
+
+We believe in you!
+
+## Deliverable
+
+Please find a screenshot of the expected results below:
+
+### Iteration 1
+
+Write the following table in `tables.html` using as much Semantic HTML as possible:
+
+![Final Table](images/final-table.png)
+
+### Iteration 2
+The second iteration is all about forms. You'll have to work on `forms.html` to recreate the following form:
+
+![Final Form](images/final-form.png)
+
+The full list of countries for the form is:
+- Spain
+- France
+- Germany
+- Italy
+- Japan
+- Russia
+- United Kingdom
+- United States
+
+## Bonus
+
+1. Add some styling to make it super nice!
+1. Add in `tables.html` a footer row that shows the AVERAGE of all players for goals and assists
+1. Add in `forms.html` some styling to make all inputs aligned :)
 </details>
 
 <details><summary>:yellow_heart: JS under the hood</summary>
-  dsjhfkjah
+  
+ ## Starter code
+
+This exercise doesn't have starter code. Copy the code from the different exercises in `index.js` and solve the different problems.
+
+## Iteration 1 - Scope
+
+1/ **Animals**
+
+How can we make sure that `myAnimal` returns *dog* and `yourAnimal` returns *cat* without hardcoding it?
+
+```js
+var animal = 'dog'
+
+function myAnimal() {
+  return animal
+}
+
+function yourAnimal() {
+  // How can we make sure that this function
+  // and the above function both pass?
+  // P.S.: You can't just hard-code 'cat' below
+  return animal
+}
+```
+
+2/ **Add two**
+
+Try this code and fix it so it works. You can move things around!
+
+```js
+function add2(n) {
+  return n + two
+  const two = 2
+}
+```
+
+3/ **funkyFunction**
+
+We want to set theFunk equal to "FUNKY!" using our funkyFunction. How do we do this and why?
+
+```js
+var funkyFunction = function() {
+  return function() {
+    return "FUNKY!"
+  }
+}
+
+// you only need to modify the code below this line!
+var theFunk = funkyFunction
+```
+---
+## Iteration 2 - Scope
+
+**A word of warning.** In this lab, you will practice doing some bad things. For example, we'll ask you to declare variables in **global scope**, and write functions that break down.
+
+We do this, because by testing the limits, and exposing the underbelly of a language you can better understand it, and know what to avoid in the future.
+
+To complete this iteration you must:
+
+1. **customerName**: Declare a variable in global scope called `customerName` using the var keyword.
+
+2. **upperCaseCustomerName()**: Write a function that accesses that global `customerName` variable, and uppercases it.
+
+3. **setBestCustomer()**: Write a function that when called, declares a variable called `bestCustomer` in global scope and assigns it to be `'not bob'. (Poor Bob.)`. Declaring a global variable from inside a function is one of those things we would never want to do normally, but is good for us to explore right now.
+
+4. **overwriteBestCustomer()**: See the consequences of declaring a variable in global scope, by writing a new function called `overwriteBestCustomer()` that changes that `bestCustomer` variable.
+
+5. **leastFavouriteCustomer** : Now declare a constant in global scope called `leastFavouriteCustomer`, be sure to assign it some initial value.
+
+6. **changeLeastFavouriteCustomer()**: now write a function called `changeLeastFavouriteCustomer()` that attempts to change that constant - notice what JavaScript does when you try to change the constant.
+
+---
+
 </details>
 
 <details><summary>:blue_heart: CSS make it pretty</summary>
-  dsjhfkjah
+  
+## Iteration #1
+
+Today we'll be practicing lots and lots of selectors in the [CSS Diner](https://flukeout.github.io/) interactive exercise!
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/fad46988-fa6a-4ab1-b148-1d12e6e15c70)
+
+You have to complete the 32 exercises to pass this lab, good luck!
+
+## Iteration #2
+
+One of the best ways to sharpen your CSS skills is to try to recreate an existing style and layout, so take a look at the deliverable below, work with a partner, and build your own version of Instagram.com.
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/ba3c67d6-abd7-4200-b5a9-b5980ed8e18a)
+
+Don't worry if you can't get it to look _exactly_ as you see but try your best to get as close as possible.
+
+### Requirements
+
+- Use [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display), [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear), and [floats](https://developer.mozilla.org/en-US/docs/Web/CSS/float) to position elements on the page
+- Look up in [MDN](https://developer.mozilla.org/en/) and use CSS properties and values that may not have been covered in class, for example:
+  - `background: url("YOUR-LINK.COM")`
+  - `list-style`
+  - `text-decoration`
+  - `text-transform`
+- Use a single external CSS stylesheet to style all pages
+- Use the images provided to construct the appropriate elements on the page:
+  - the iPhone
+  - App Store and Google Play buttons
+  - Instagram Logo
+  - Login button
+
+The `starter-code` contains all the files, images, and text content needed to create the page. The text is in the `index.html`, and the color palette is in `main.css`
 </details>
 
 <details><summary>:yellow_heart: JS prototypes</summary>
@@ -953,7 +1098,8 @@ Returns the current status of the `War` based on the size of the armies.
 </details>
 
 <details><summary>:yellow_heart::orange_heart: Web API DOM</summary>
-  ## Starter code
+ 
+ ## Starter code
 
 You have to solve the different problems in the `starter-code/index.js` file. This Javascript file is included in the `starter-code/index.html`. 
 
@@ -969,8 +1115,7 @@ After you open it, you can open the `Chrome Developer Tools` and see the `consol
 - Use at least one `getElementById`
 - Use at least one `getElementsByTagName`
 - Use at least one `getElementsByClassName`
-
-
+- 
 ---
 ## Iteration 1: Creating one product
 
@@ -1055,12 +1200,163 @@ Those two inputs represent the name and the unit price of the new product. Then 
 </details>
 
 <details><summary>:blue_heart: CSS animations</summary>
-  dsjhfkjah
+  
+ ## Instructions
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/3d864e2e-9bfa-42b8-8ce0-1446868f6360)
+
+We have provided for you some initial code that will save you some time and focus on the animations, sounds and cool stuff!
+
+The code is in the `student_code` folder, you should work only inside that folder to complete your missions!
+
+### Mission 1
+
+- When your mouse is over any photo, make the box show a shadow around it so that the user knows that the box can be clicked
+- Useful Tip: [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
+
+### Mission 2
+
+If you want to create a really zen website, will you need sounds to create a Zen atmosphere right?
+
+- Add an event for each picture to play a [sound](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio) when you click the image
+- To add some music, you can start by adding this line for every sound you may want to play:
+  ```js
+  var yourMusicName = new Audio('yourMusicroute')`
+  ```
+- Remember all the sounds are in the `sounds` folder
+- Also will be great to make it endless, so add the attribute `loop` to your music!
+
+### Mission 3
+
+What happens if you click two images with sound at the same time? Right, the music will be mixed. Make sure to stop all the music before play a new one.
+
+- You can try to look at the [`pause()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause) method
+
+### Mission 4
+
+Let's make it prettier by adding a cool effect!
+
+- Add a [sepia](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia) effect to all your pictures by default
+- When you click the image, you may add a CSS class to show the original color of the image
+- Remember that you can add or remove classes with the property `classList`
+- `TIP`: This action will be in the same click event that you have created before
+
+### Mission 5
+
+- It will be nice to make the picture slightly bigger when you click it. Add a transform to scale it a little, so it will look better than before.
+- Try using the property `scale()`
+
+## Bonus
+
+- Make a button that resets all the pictures, stopping all the sounds and effects!
+
 </details>
 
 <details><summary>:blue_heart: CSS responsive - flexbox</summary>
-  dsjhfkjah
+  	
+ ## Iteration 0 - **Warm up**
+First of all, we are going to practice the flexbox basics that we have seen today in class to internalize them. And what better way to do it than with a game? We are going to access the [Flexbox Froggy](https://flexboxfroggy.com) page and we are going to complete all the levels of the game. Once the challenge is overcome, we will send a screenshot to our teacher and we will continue with the next iteration.
+
+## SOLUTION
+
+![iteration0](https://github.com/AlexandraMH93/LAB-CSS-responsive-flexbox/assets/145113052/f5e1b6a8-97b0-451b-9a18-ee63c4c4ec3e)
+
+
+## Iteration 1 - **Analizing the structure**
+
+As you can see, there are a `main.css` and a `student.css` files in the `starter-code` folder. Don't worry about the first one, you will write your CSS code in the `student.css` file. There's also an `index.html` file, so let's open it in our browser and...
+DON'T PANIC! I know it looks quite awful, but don't worry because we will gradually shape it.
+
+First of all, let's analyse our `index.html` file and identify the different elements in our web page. It should represent something like this:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/e5f4dbf8-2ebf-42ba-a36c-dad6a7601a7b)
+
+As we can see, there are two large sections in our body, each one with its class: `navbar` and `content`.
+
+1. Open the `web-view.png` stored in the `images` folder with your favourite image editor and mark each section as follows:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/e6500056-0b69-4215-9ded-834840335739)
+
+Besides, if we focus on the `navbar` section, we find another 3 elements: an `image`, a `div` and another `div` with the `other-links` class.
+
+2. Mark also those new elements in your image:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/36de518a-707b-4536-8560-4cfdd1e8718b)
+
+If we dig a little deeper, we can see that in the first div, there are an `input` and a `button`, while in the second there are 4 `h3` tags.
+
+3. Mark them in our image:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/27cdeced-145c-4d1a-b423-dcd9f6f268ec)
+
+4. Now it's your turn! Analyze the rest of the `HTML` like we just did with the `navbar` section.
+
+## SOLUTION
+
+![iteration1](https://github.com/AlexandraMH93/LAB-CSS-responsive-flexbox/assets/145113052/fd12cf5e-c9b5-4bf0-8e28-8776c35546a4)
+
+
+## Iteration 2 - **Mobile View**
+
+Now that we have everything well structured, let's shape our web page. You will focus on the mobile view first, so you reach something like this:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/dcf912e9-f622-45c8-833b-dbab768c77c7)
+
+Since `navbar` section contains the three elements we want to distribute, it will be the one that contains the `flex` attributes.
+
+1. Access to `student.css` file and add the following code:
+
+```
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+```
+
+However, we don't want to display the `other-links` element in our movile view (this time we will assign the mobile view to a `width` equal to or less than `850px`).
+
+2. To hide this element, assign `display: none` attribute to the `other-links` class using `media queries`>.
+
+```
+@media (max-width: 850px) {
+  .other-links {
+    display: none;
+  }
+}
+```
+
+3. Your turn! Try to shape the rest of the mobile view just like we did with the `navbar` section. Good luck!
+
+
+## Iteration 3 - **Tablet View**
+
+Now let's shape the tablet view exactly as we did with mobile view.
+
+In the tablet view (`width` less than or equal to `1300px`), we don't want to display the `sidebar` section , so...
+
+1. Use `media query` to hide `sidebar` section using `media queries`.
+
+2. Use `flex` properties to display something like this:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/bcd6afa3-eafc-4e61-92a9-98949cff0059)
+
+
+## Iteration 4 - **Web View**
+
+Finally, we want to shape the web view. 
+
+1. Assign `flex` properties to the last section (`sidebar`) to display something like this:
+
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/ae513f75-8822-4edf-a12d-455228c60c86)
+
+## Bonus - **Make it interactive!**
+
+Now the web page is complete, but it seems a little bit... dead. Add some `animations` and CSS `effects` to bring it to life!
+
+---
+
 </details>
+
 
 ## BLOCK 2 - BACKEND
 ## BLOCK 3 - FULLSTACK

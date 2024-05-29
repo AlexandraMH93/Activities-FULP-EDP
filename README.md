@@ -16,12 +16,13 @@ This repository contains all the exercises of the FULP employability campus. The
 ![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 
 
-
-
-
 ## BLOCK 1 - FRONTEND
+In order to be able to easily visualise which technology is used in which activity, the following identifiers will be used:
 
 :yellow_heart: Javascript :orange_heart: HTML :blue_heart: CSS
+
+
+<details><summary>Activities</summary>
 
 <details><summary>:yellow_heart: JS introduction</summary>
 
@@ -1374,7 +1375,8 @@ Now the web page is complete, but it seems a little bit... dead. Add some `anima
 
 </details>
 
-
+</details>
+	
 ## BLOCK 2 - BACKEND
 ## BLOCK 3 - FULLSTACK
 ## BUSINESS

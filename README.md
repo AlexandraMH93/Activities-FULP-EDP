@@ -16,475 +16,112 @@ This repository contains all the exercises of the FULP employability campus. The
 
 
 ## BLOCK 1 - FRONTEND
-In order to be able to easily visualise which technology is used in which activity, the following identifiers will be used:
-
-:yellow_heart: Javascript :orange_heart: HTML :blue_heart: CSS
-
-
-<details><summary>Activities</summary>
-
-<details><summary>:yellow_heart: JS introduction</summary>
-
-  ## Exercises
-You have 3 iterations to do. Each iteration is within a folder `iterations` that contains two files: `index.html` and `script.js`.
-
-The HTML file simply loads the JavaScript file where you will code your solution code.
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <script src="script.js"></script>
-  </body>
-</html>
-```
-
-Your `script.js` Javascript file contains a sample code that you will have to modify. It showcases the use of the [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) method, that allows you to read a value from a window.
-```js
-// Your Solution code goes here
-
-var test = window.prompt("type something here")
-console.log(test)
-```
-
-To test that it works, click on the Live Server button that is located on the bottom-right corner of VSCode:
-
-And then open your [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) to see the `console.log` output.
-
-Try it out and when you have checked that it works, you can delete the provided code in `script.js`
-
---- 
-
-
-#### Iteration 1: Basic Input/Output & Conditionals
-
-1. Create a prompt that asks for the name of a driver and stores it into a variable `driver`.
-1. Create a prompt that asks for the name of a pilot and stores it into a variable `pilot`.
-1. Print `The driver's name is XXXX`
-1. Print `The pilot's name is YYYY`
-1. Depending on which name is longer (where `XX` refers to the number of characters), print:
-  - `The Driver has the longest name, it has XX characters` or
-  - `Yo, Pilot got the longest name, it has XX characters` or
-  - `Wow, you both got equally long names, XX characters!`
-
---- 
-
-#### Iteration 2: String Loops
-1. Print all the characters of the driver's name, separated by a space.
-```
-"m i c h a e l"
-```
-
-2. Print all the characters of the driver's name, separated by a dash and ending with an exclamation mark!
-```
-"m-i-c-h-a-e-l!"
-```
-
-3. Print all the characters of the pilot's name, in reverse order and [UpperCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-```
-"L E A H C I M"
-```
-
---- 
-
-#### Iteration 3: Number Conditionals & Loops
-
-1. Write a loop that will print all the numbers from 1-20
-1. Write a loop that will print all ODD the numbers smaller than 128 that are divisible by 3, but not divisible by 5.
-1. Write a loop that will write all the [powers of 2](https://www.varsitytutors.com/hotmath/hotmath_help/topics/exponent-tables-and-patterns) from 2^1 (2) to 2^10 (1024)
-```
-2 ^ 1 = 2
-2 ^ 2 = 4
-...
-2 ^ 10 = 1024
-```
-
---- 
-
-#### Iteration 4: Bonus Time!
-Go to [lorem ipsum generator](https://loremipsum.io) and:
-
-1. Generate 3 paragraphs. Store the text in a `lorem` variable
-1. Make your program count the number of words in the `lorem`
-1. Make your program count the number of times the Latin word `et` appears in `lorem`
-
---- 
-</details>
-
-
-
-<details><summary>:yellow_heart: JS strings & functions</summary>
-
-  ### Starter code
-  
-You have to solve the different problems in the starter-code/index.js file. This Javascript file is included in the starter-code/index.html.
-To test that it works, click on the Live Server button that is located on the bottom-right corner of VSCode:
-After you open it, you can open the Chrome Developer Tools and see the console.log of your exercises.
-
-### RULES
-All your functions have to be pure
-
---- 
-
-### Iteration 1
-
-Create the following functions:
-
-#### 1.1 **removeFirstAndLastChar(string)**
-
-This function has to remove the first and last characters of a string. 
-
-You're given one parameter, the original string. 
-
-In case your parameter has less than two characters return empty string.
-
-#### 1.2 **moreNerdy(string)** 
-
-This function has to make your strings more nerdy: Replace all:
-  - `'a'` or `'A'` with `4`
-  - `'e'` or `'E'` with `3`.
-  - `'l'` with `1`. 
-  
-```js
-e.g. "Fundamentals" --> "Fund4m3nt41s"
-``` 
-
-#### 1.3/ **noVowels(string)**. 
-
-This function has to remove all the lowercase and uppercase vowels in a given string.
-
-```js
-e.g. shortcut("reboot") // --> rbt
-e.g. shortcut("HELLO") // --> HLL
-``` 
-
----
-
-### Iteration 2 - Nickname Generator
-
-Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
-
-If the 3rd letter is a consonant, return the first 3 letters.
-
-```js
-nickname("Robert") //=> "Rob"
-nickname("Kimberly") //=> "Kim"
-nickname("Samantha") //=> "Sam"
-```
-
-If the 3rd letter is a vowel, return the first 4 letters.
-
-```js
-nickname("Jeannie") //=> "Jean"
-nickname("Douglas") //=> "Doug"
-nickname("Gregory") //=> "Greg"
-```
-
-If the string is less than 4 characters, return `"Error: Name too short"`.
-
---- 
-
-### Iteration 3 - High and low
-
-In this little assignment you are given a string of space separated numbers (including negative numbers), and have to return the highest and lowest number.
-
-Example:
-```js
-highAndLow("1 2 3 4 5");  // return "5 1"
-highAndLow("1 2 -3 4 5"); // return "5 -3"
-highAndLow("1 9 3 4 -5"); // return "9 -5"
-```
-
-Notes:
-Output string must be two numbers separated by a single space, and highest number is first.
-
---- 
-
-### Iteration 4 - Reverse it
-
-You need to write a function that reverses the words in a given string.
-
-As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
-
-```js
-reverse('Hello World') == 'World Hello'
-reverse('Hi    There.') == 'There. Hi'
-```
-
---- 
-
-### Bonus
-
-If you have functions with more than 3 lines, rewrite the code so that your functions will be maximum 3 lines.
-
-Divide the problem into smaller problems by using functions and conquer the world :) 
-
---- 
-</details>
-
-<details><summary>:orange_heart: HTML introduction</summary>
+ Tasks in Block 1:
  
-  ## Exercise
+1 - Linux intro
 
-### Starter code
+2 - JS objects
 
-We've given you the HTML/CSS needed to get going in the [starter-code](starter-code) folder. You already have all the CSS to solve the exercise but you need to pay attention to the HTML structure carefully!
+3 - JS prototypes
 
-The end result should be something similar to:
+4 - Web API DOM
 
-![](https://github.com/rebootacademy-labs/LAB-105-HTML-introduction/blob/main/lab-html_introduction_solution.png)
+5 - CSS responsive - flexbox
 
-#### Head
-- Add a page title: `Wikipedia - Web Developer`
-- Add a link to the stylesheet `styles.css`
+Scroll down activities to see them and scroll down each activity to see the statements.
+<details><summary>
+		
+ ### ACTIVITIES
+ </summary>
 
-#### Header
-- Add an image with source `https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png`
-- Add a heading (h1) with the text `Web developer` and a link to `https://en.wikipedia.org/wiki/Web_developer`
-- Add a div (with class `copy`) and the text: `From Wikipedia, the free encyclopedia`
+<details>
+<summary>
 
-#### Section / intro
+ ### 1 - Linux intro
+</summary>
 
-- Add a parragraph with the content:
-```
-A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications using a client–server model. The applications typically use HTML, CSS and JavaScript in the client, PHP, ASP.NET (C#) or Java in the server, and http for communications between client and server. A web content management system is often used to develop and maintain web applications.
-```
-#### Aside: Table of Contents
+## Exercise
 
-- Title (h3): `Contents`
-- Ordered list with:
-  - Link to `#section1` with the text: `Nature of employment`
-  - Link to `#section2` with the text: `Type of work performed`
-  - Link to `#section3` with the text: `Educational and licensure requiremeli>`
-  - Link to `#section4` with the text: `See also`
-  - Link to `#section5` with the text: `References`
-  - Link to `#section6` with the text: `External links`
+### 0. Initial Setup
 
-#### Section1
-- Title (h2): `Nature of employment`
-- Parragraph with the text:
-```
-Web developers are found working in various types of organizations, including large corporations and governments, small and medium-sized companies, or alone as freelancers. Some web developers work for one organization as a permanent full-time employee, while others may work as independent consultants, or as contractors for an agency or at home personal use. Web developers typically handle both server-side and front-end logic. This usually involves implementing all the visual elements that users see and use in the web applications or use, as well as all the web services that are necessary to power the usage of there developing work. Salaries vary depending on the type of development work, location, and level of seniority.
-```
+- Create a `~/code` folder (inside your home folder)
+- Inside that folder, create a `labs` folder  (ie. `~/code/labs`)
+- Now go inside and create a new directory named `welcome-to-tech`
+- Then enter the directory: `cd welcome-to-tech`
+- Create a `my-favorite-things` folder inside with `mkdir my-favorite-things`
+- Finally, enter the new directory: `cd my-favorite-things`
 
-#### Section2
-- Title (h2): `Type of work performed`
+### Requirements
 
-```
-May specialize in one or more of these tiers - or may take a more interdisciplinary role. A web developer is usually classified as a Front-end web development or a Back-End Web Developer. For example, in a two-person team, one developer may focus on the technologies sent to the client such as HTML, JavaScript, CSS, ReactJs or AngularJS and on the server-side frameworks (such as Perl, Python, Ruby, PHP, Java, ASP, ASP.NET, Node.js) used to deliver content and scripts to the client. Meanwhile, the other developer might focus on the interaction between server-side frameworks, the webserver, and a database system. Further, depending on the size of their organization, the aforementioned developers might work closely with a content creator/copywriter, marketing adviser, user experience designer, web designer, web producer, project manager, software architect, or database administrator - or they may be responsible for such tasks as web design and project management themselves.
-```
-
-#### Section3
-- Title (h2): `Educational and licensure requirements`
-- Parragraph with the text:
-```
-There are no formal educational or licensure requirements to become a web developer. However, many colleges and trade schools offer coursework in web development. There are also many tutorials and articles, which teach web development, freely available on the web - for example Basic JavaScript
-```
-- Parragraph with the text:
-```
-Even though there are no formal educational requirements, dealing with web developing projects requires those who wish to be referred to as web developers to have advanced knowledge/skills in:
-```
-- Unordered list with:
-  - `HTML/XHTML, CSS, JavaScript and jQuery.`
-  - `Server/client side architecture like all or some of the above mentioned.`
-  - `Programming/Coding/Scripting in one of the many server-side languages or frameworks (e.g., Perl, Python, Ruby, PHP, Go, CFML - ColdFusion, Java, ASP, ASP.NET, Node.js)`
-  - `Ability to utilize a database`
-  - `Creating single page application with use of front-end tools such as EmberJS,[1] ReactJS[2] or VueJS[3]`
-
-#### Section4
-- Title (h2): `See also`
-- Unordered list with:
-  - `Website design`
-  - `Web development`
-  - `Web engineering`
-  - `Software developer`
-
-#### Section5
-- Title (h2): `References`
-- Ordered list with citations:
-  - Link to `https://emberjs.com/` with the text: `EmberJS website`, followed by the text `EmberJS` emphasized.
-  - Link to `https://facebook.github.io/react/` with the text: `ReactJS website`, followed by the text `ReactJS` emphasized.
-  - Link to `https://vuejs.org` with the text: `VueJS website`, followed by the text `VueJS` emphasized.
-
-#### Section6
-- Title (h2): `External links`
-- Ordered list with citations:
-  - The US Department of Labor's description of Web Developers
-  - World Wide Web Consortium (W3C)
+#### 1. Organize your favorite books
+- in the `my-favorite-things` folder, create a folder called `books`
+- create a folder in `books` named after your favorite author (e.g. `mark-twain`, or `john-grisham`, but avoid spaces!)
+- create 2 `txt` files named after some of the author's books in the author's folder
+- open the books folder in VSCode
+- edit each file to add a brief description of each book
 
 
-#### Footer
-- Image with source `https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/80px-Wikiversity-logo.svg.png`
-- Parragraphs with:
-```
-This page was last edited on 28 August 2019, at 04:59 (UTC).
-```
-```
-Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
-```
-#### Bonus
-- Using `id="IdName"` Add links to the last element of Section 3. ie: `EmberJS,[1]` to the correspondent citations in Section 5.
+#### 2. Organize your favorite movies
 
----
-</details>
-
-<details><summary>:blue_heart: CSS introduction</summary>
-  
-  ## Starter code
-
-You will be working in the `apple-pie-starter-code` folder. The starter-code contains all the files, images, and text content needed to create the page. The text is in the `index.html`, and a css file is created in `main.css`.
-
-## Deliverable
-
-Please find a screenshot of the expected results below:
-![Aple pie](Block_1/CSS_introduction/apple-pie/images/complete-apple-pie.jpg)
-![Aple pie](Block_1/CSS_introduction/extra-french-soup/images/complete-french-onion-soup.jpg)
+- in the `my-favorite-things` folder, create a folder called `movies`
+- create a folder in movies named after your favorite actor
+- create a folder in the actor folder named after the actor's breakthrough movie
+- create a text file named after the actor's character in the breakthrough movie in the top level `movies` directory
+- move the text file to the breakthrough movie's folder
+- look back at VSCode and edit that text file with a description of the character's role in the movie
 
 
-## Bonus
+#### 3. Organize your favorite music
 
-If you feel you need more practice, in the `starter-code` you will find `extra-french-soup` folder. There you will find `expected-result.md` file where you can see what is expected from you to build. This folder has the same structure as the the `apple-pie` one so follow the same steps.
+- in the `my-favorite-things` folder, create a folder called `music`
+- move into the `music folder`
+- create a folder called `disco`
+- create a text file in `disco` called `ymca`
+- delete the `disco` folder
+- create a folder called `creed`
+- delete the `creed` folder
+- create folders called `one-direction`, `the-strokes`, and `rihanna`
+- create a text file in `one-direction` called `what-makes-you-beautiful.txt`
+- make two copies `what-makes-you-beautiful.txt` - one into `the-strokes` and one into `rihanna` and rename those files with songs by those artists
 
----
-</details>
+Now your folders should look something similar to this:
 
-<details><summary>:yellow_heart: JS arrays</summary>
-
-  ## Starter code
-
-You have to solve the different problems in the `starter-code/index.js` file. This Javascript file is included in the `starter-code/index.html`. 
-
-You can easily open the HTML in Chrome, by typing in your terminal:
- 
-To test that it works, click on the Live Server button that is located on the bottom-right corner of VSCode:
-
-After you open it, you can open the `Chrome Developer Tools` and see the `console.log`  of your exercises.
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/d5c2689e-4960-4748-b35b-0554d56244f2)
 
 
-## **RULES**
+#### 4. Reorganize _everything_
 
- - All your functions have to be [pure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
- - No more than 10 lines per function
+- in the `my-favorite-things` folder, create a folder called `media`
+- move `books`, `movies`, and `music` into the `media` folder
 
+#### 5. Organize the top music, movies, and books of 2020
 
----
-## Iteration 1
+- move to the `my-favorite-things` folder and copy inside the `media` folder, then, rename it `2020-media`
+- in the `2020-media` folder, rename each folder to have `2020-` before the title
+- delete the contents of `2020-music`, `2020-movies`, and `2020-books`
+- create a file called `top-ten-movies.html` in `2020-movies`
+- create a file called `top-ten-songs.html` in `2020-music`
+- create a file called `top-ten-books.html` in `2020-books`
 
-Create the following functions:
-
-### 1.1/ **sumPositiveNumbers(array)**
-
-You get an array of numbers, return the sum of all of the positives ones.
-
-```js
-  E.g. [1,-4,7,12] => 1 + 7 + 12 = 20
-```
+![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/5348de11-a600-48b7-896c-dec02bd4a761)
 
 
-### 1.2/ **countThatSheep(array)** 
+#### **Bonus**
 
-Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the one-dimensional array (true means present).
+Look through the additional resources and do the following
 
-For example,
-
-```js
-[true,  true,  true,  false, true,  true,  true,  true , true,  false, true,  false]
-```
-The correct answer would be 9.
-
-**Note:** Not count truthy values, only `true` values :) 
-
-### 1.3/ **countThatSheepV2(array)** 
-
-Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the **two-dimensional** array (true means present).
-
-For example,
-
-```js
-[
-  [true,  true,  true,  false, true],
-  [true,  false,  true,  false, true],
-  [true,  false,  true,  false, true],
-]
-```
-The correct answer would be 10.
-
-**Note:** Not count truthy values, only `true` values :) 
-
-### 1.4/ **toReverse(string)**. 
-
-You get a string with a representation of numbers and you have to return an array with the values in reversed order
-Example:
-``` 
-348597 => [7,9,5,8,4,3]
-```
-
----
-
-## Iteration 2 - Count until i want
-
-
-Create a function with two arguments `countBy(x, n)` that will return an array of length (n) with multiples of (x).
-
-Check that the given number and the number of times to count are positive numbers greater than 0.
-
-Return the results as an array.
-
-Examples:
-```js 
-countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
-countBy(2,5) === [2,4,6,8,10]
-```
+- Look at the top/bottom 10 lines of each file
+- Figure out how to search through a file from the command line, without opening the file, for a string of text
 
 --- 
 
-## Iteration 3 - Shorter first
-
-
-Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
-
-For example, if this array was passed as an argument:
-```js
-["Telescopes", "Glasses", "Eyes", "Monocles"]
-```
-Your function would return the following array:
-```js
-["Eyes", "Glasses", "Monocles", "Telescopes"]
-```
-All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
-
---- 
-
-## Bonus
-
-**Extra exercise**
-
-You have to implement the `difference function`, which compares two arrays and return the values not included in both arrays.
-
-```js
-array_diff([1,2],[1]) == [2]
-```
-If a value is present in b, all of its occurrences must not included in the result:
-```js
-array_diff([1,2,2,2,3],[2]) == [1,3]
-```
-
-**One more**
-
-You have to implement the `snail function`, which receives a `n x n` array and returns the array elements arranged from outermost elements to the middle element, traveling clockwise.
-```js
-array = [[1,2,3], [4,5,6], [7,8,9]]
-snail(array) == [1,2,3,6,9,8,7,4,5]
-```
-
-For better clarity, this is the path you need to follow: 
-![](./snail.png)
-
-NOTE: The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.
-NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array [[]].
-
 </details>
 
-<details><summary>:yellow_heart: JS objects</summary>
+<details>
+	<summary>
+		
+ ### 2 - JS objects
+  </summary>
   
   ## Starter code
 
@@ -494,16 +131,12 @@ You have to solve the different problems in the `starter-code/index.js` file. Th
 To test that it works, click on the Live Server button that is located on the bottom-right corner of VSCode:
 
 After you open it, you can open the `Chrome Developer Tools` and see the `console.log`  of your exercises.
-
-
 
 ## **RULES**
 
  - All your functions must be [pure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
  - No more than 10 lines per function
 
-
----
 ## Iteration 1
 
 Create the following functions:
@@ -515,7 +148,6 @@ This function has to return the join of the firstName and the lastName attribute
 ```js
 E.g. { firstName : 'Luis' , lastName: 'Burón' }  =>   "Luis Burón"
 ```   
----
 
 ## Iteration 2 - Who is online?
 
@@ -559,9 +191,6 @@ If for example, no users are online the output should look as follows:
 
 Finally, if you have no friends in your chat application, the input will be an empty array []. In this case you should return an empty object {}
 
-
---- 
-
 ## Iteration 3 - Overheating
 
 All the components of a computer have a defined maximum temperature at which it can continue to function properly.
@@ -604,9 +233,6 @@ console.log(results);
 */
 ```
 
-
---- 
-
 ## Bonus
 
 **Extra exercises**
@@ -647,287 +273,10 @@ E.g. { firstName : 'Luis Álvaro' , lastName: 'burón mejías' }  =>   "Luis Ál
 ---
 </details>
 
-<details><summary>:yellow_heart: JS functional arrays</summary>
-
-  ## Starter code
-
-You have to solve the different problems in the `starter-code/index.js` file. This Javascript file is included in the `starter-code/index.html`. 
-
-You can easily open the HTML in Chrome, by clicking the Live Server button located in the bottom-right corner of VSCode.
-
-After you open it, you can open the `Chrome Developer Tools` and see the `console.log`  of your exercises.
-
-
-
-## **RULES**
-
- - All your functions must be [pure](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
- - No more than 10 lines per function
-
-
----
-## Iteration 1
-
-Create the following functions:
-
-### 1.1/ **whoIsOlderThan(people, age)**
-
-This function have to return a new array with people older than `age` argument.
-
-```js
-var people = [
-  {name : "Luis", age : 20},
-  {name : "Luigi", age : 14},
-  {name : "Mario", age : 25},
-]
-e.g. whoIsOlderThan(people, 20)  =>   [ { name : "Mario", age : 25 } ] 
-```
-
-### 1.2/ **getEmailsOfOlderThanAnAge(people, age)**
-
-This function have to return a new array with the emails of people older than `age` argument.
-
-```js
-var people = [
-  {name : "Luis", age : 20, email : "luis@gmail.com"},
-  {name : "Luigi", age : 14, email : "luigi@gmail.com"},
-  {name : "Mario", age : 25, email : "mario@gmail.com"},
-]
-e.g. getEmailsOfOlderThanAnAge(people, 15)  =>   [ "luis@gmail.com", "mario@gmail.com" ];
-```
-
-### 1.3/ **getTheSumOfAges(people)**
-
-This function have to return the sum of all the `age` attributes of people.
-
-```js
-var people = [
-  {name : "Luis", age : 20, email : "luis@gmail.com"},
-  {name : "Luigi", age : 14, email : "luigi@gmail.com"},
-  {name : "Mario", age : 25, email : "mario@gmail.com"},
-]
-e.g. getTheSumOfAges(people)  =>  59
-```
-
----
-
-## Iteration 2 - Who is online or offline?
-
-You have a chat application and you want to show your users which one of their friends are online and available to chat!
-
-Given an input of an array of objects containing usernames, status and time since last activity (in seconds), create a function that receive another argument `status` to only return the names of these people.
-
-To use this function, you must follow the example below to call it 
-```js
-whoIsInThisStatus([
-  {
-    username: 'David',
-    status: 'online',
-    lastActivity: 600
-  }, {
-    username: 'Lucy', 
-    status: 'offline',
-    lastActivity: 2320
-  }, {
-    username: 'Bob', 
-    status: 'online',
-    lastActivity: 4320
-  }
-], "online")
-```
-The corresponding output should look as follows:
-```js
-[ "David", "Bob" ]
-```
-
-Finally, if you have no friends in your chat application, the input will be an empty array []. In this case you should return an empty array too []
-
-
---- 
-
-
-## Bonus
-
-**Extra exercise**
-
-Create a function `getBestStudents`  that takes an array of students. The function must return an array with the emails and the average of the students. These students must have a average value of 9 or more in their subjects. The output have to be orderer by average mark.
-
-
-For example:
-
-```js
-getBestStudents([
-  {name : "Luis", age : 20, email : "luis@gmail.com", subjectsMarks : [9, 8, 10, 5 , 10]},
-  {name : "Luigi", age : 14, email : "luigi@gmail.com", subjectsMarks : [9, 8, 10, 9 , 10]},
-  {name : "Mario", age : 25, email : "mario@gmail.com", subjectsMarks : [9, 10, 10, 9, 10]},
-])
-// returns [
-//  {email : "mario@gmail.com", average : 9.6 }, 
-//  {email : "luis@gmail.com", average : 9.2 }
-// ]
-```
----
-
-</details>
-
-<details><summary>:orange_heart: HTML tables & forms</summary>
-  
- ## Starter code
-
-You will be working in the `starter-code` folder. You have two separate files: `forms.html` and `tables.html`.
-
-In this exercise you will only have **one css file**: `main.css` so you'll have to make sure that the css you write will not affect the other file.
-
-To preview your work, click on the Live Server button that is located on the bottom-right corner of VSCode
-
-We believe in you!
-
-## Deliverable
-
-Please find a screenshot of the expected results below:
-
-### Iteration 1
-
-Write the following table in `tables.html` using as much Semantic HTML as possible:
-
-![Final Table](images/final-table.png)
-
-### Iteration 2
-The second iteration is all about forms. You'll have to work on `forms.html` to recreate the following form:
-
-![Final Form](images/final-form.png)
-
-The full list of countries for the form is:
-- Spain
-- France
-- Germany
-- Italy
-- Japan
-- Russia
-- United Kingdom
-- United States
-
-## Bonus
-
-1. Add some styling to make it super nice!
-1. Add in `tables.html` a footer row that shows the AVERAGE of all players for goals and assists
-1. Add in `forms.html` some styling to make all inputs aligned :)
-</details>
-
-<details><summary>:yellow_heart: JS under the hood</summary>
-  
- ## Starter code
-
-This exercise doesn't have starter code. Copy the code from the different exercises in `index.js` and solve the different problems.
-
-## Iteration 1 - Scope
-
-1/ **Animals**
-
-How can we make sure that `myAnimal` returns *dog* and `yourAnimal` returns *cat* without hardcoding it?
-
-```js
-var animal = 'dog'
-
-function myAnimal() {
-  return animal
-}
-
-function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  return animal
-}
-```
-
-2/ **Add two**
-
-Try this code and fix it so it works. You can move things around!
-
-```js
-function add2(n) {
-  return n + two
-  const two = 2
-}
-```
-
-3/ **funkyFunction**
-
-We want to set theFunk equal to "FUNKY!" using our funkyFunction. How do we do this and why?
-
-```js
-var funkyFunction = function() {
-  return function() {
-    return "FUNKY!"
-  }
-}
-
-// you only need to modify the code below this line!
-var theFunk = funkyFunction
-```
----
-## Iteration 2 - Scope
-
-**A word of warning.** In this lab, you will practice doing some bad things. For example, we'll ask you to declare variables in **global scope**, and write functions that break down.
-
-We do this, because by testing the limits, and exposing the underbelly of a language you can better understand it, and know what to avoid in the future.
-
-To complete this iteration you must:
-
-1. **customerName**: Declare a variable in global scope called `customerName` using the var keyword.
-
-2. **upperCaseCustomerName()**: Write a function that accesses that global `customerName` variable, and uppercases it.
-
-3. **setBestCustomer()**: Write a function that when called, declares a variable called `bestCustomer` in global scope and assigns it to be `'not bob'. (Poor Bob.)`. Declaring a global variable from inside a function is one of those things we would never want to do normally, but is good for us to explore right now.
-
-4. **overwriteBestCustomer()**: See the consequences of declaring a variable in global scope, by writing a new function called `overwriteBestCustomer()` that changes that `bestCustomer` variable.
-
-5. **leastFavouriteCustomer** : Now declare a constant in global scope called `leastFavouriteCustomer`, be sure to assign it some initial value.
-
-6. **changeLeastFavouriteCustomer()**: now write a function called `changeLeastFavouriteCustomer()` that attempts to change that constant - notice what JavaScript does when you try to change the constant.
-
----
-
-</details>
-
-<details><summary>:blue_heart: CSS make it pretty</summary>
-  
-## Iteration #1
-
-Today we'll be practicing lots and lots of selectors in the [CSS Diner](https://flukeout.github.io/) interactive exercise!
-
-![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/fad46988-fa6a-4ab1-b148-1d12e6e15c70)
-
-You have to complete the 32 exercises to pass this lab, good luck!
-
-## Iteration #2
-
-One of the best ways to sharpen your CSS skills is to try to recreate an existing style and layout, so take a look at the deliverable below, work with a partner, and build your own version of Instagram.com.
-
-![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/ba3c67d6-abd7-4200-b5a9-b5980ed8e18a)
-
-Don't worry if you can't get it to look _exactly_ as you see but try your best to get as close as possible.
-
-### Requirements
-
-- Use [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display), [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear), and [floats](https://developer.mozilla.org/en-US/docs/Web/CSS/float) to position elements on the page
-- Look up in [MDN](https://developer.mozilla.org/en/) and use CSS properties and values that may not have been covered in class, for example:
-  - `background: url("YOUR-LINK.COM")`
-  - `list-style`
-  - `text-decoration`
-  - `text-transform`
-- Use a single external CSS stylesheet to style all pages
-- Use the images provided to construct the appropriate elements on the page:
-  - the iPhone
-  - App Store and Google Play buttons
-  - Instagram Logo
-  - Login button
-
-The `starter-code` contains all the files, images, and text content needed to create the page. The text is in the `index.html`, and the color palette is in `main.css`
-</details>
-
-<details><summary>:yellow_heart: JS prototypes</summary>
+<details><summary>
+	
+ ### 3 - JS prototypes
+ </summary>
   
   ## Starter code
 
@@ -968,7 +317,6 @@ Modify the `Soldier` constructor function and add 2 methods to its prototype: `a
 - should remove the received damage from the `health` property
 - **shouldn't return** anything
 
----
 ## Iteration 2 - Viking
 
 A `Viking` is a `Soldier` with an additional property, their `name`. They also have a different `receiveDamage()` method and new method, `battleCry()`.
@@ -1010,7 +358,6 @@ Modify the `Viking` constructor function, have it inherit from `Soldier`, reimpl
 - should receive **0 arguments**
 - should return **"Odin Owns You All!"**
 
----
 ## Iteration 3 - Saxon
 
 A `Saxon` is a weaker kind of `Soldier`. Unlike a `Viking`, a `Saxon` has no name. Their `receiveDamage()` method will also be different than the original `Soldier` version.
@@ -1042,8 +389,6 @@ Modify the `Saxon`, constructor function, have it inherit from `Soldier` and rei
 - should remove the received damage from the `health` property
 - **if the Saxon is still alive**, it should return _**"A Saxon has received DAMAGE points of damage"**_
 - **if the Saxon dies**, it should return _**"A Saxon has died in combat"**_
-
----
 
 ## Bonus - War
 
@@ -1112,9 +457,14 @@ Returns the current status of the `War` based on the size of the armies.
 - **if the `Viking` array is empty**, should return _**"Saxons have fought for their lives and survive another day..."**_
 - **if there are at least 1 `Viking` and 1 `Saxon`**, should return _**"Vikings and Saxons are still in the thick of battle."**_
 
+---
+
 </details>
 
-<details><summary>:yellow_heart::orange_heart: Web API DOM</summary>
+<details><summary>
+	
+ ### 4 - Web API DOM
+</summary>
  
  ## Starter code
 
@@ -1124,8 +474,6 @@ You can easily open the HTML in Chrome, by clicking the Live Server button locat
 
 After you open it, you can open the `Chrome Developer Tools` and see the `console.log`  of your exercises.
 
-
-
 ## **RULES**
 
 - Use at least 3 `onclick` events
@@ -1133,7 +481,7 @@ After you open it, you can open the `Chrome Developer Tools` and see the `consol
 - Use at least one `getElementsByTagName`
 - Use at least one `getElementsByClassName`
 - 
----
+
 ## Iteration 1: Creating one product
 
 We will start by creating the HTML for one of your products. It should look like this:
@@ -1214,61 +562,14 @@ Those two inputs represent the name and the unit price of the new product. Then 
 - That product's price should be included in the total price of the entire Shopping Cart
 - You should be able to delete the product
 
-</details>
-
-<details><summary>:blue_heart: CSS animations</summary>
-  
- ## Instructions
-![image](https://github.com/AlexandraMH93/Activities-FULP-EDP/assets/145113052/3d864e2e-9bfa-42b8-8ce0-1446868f6360)
-
-We have provided for you some initial code that will save you some time and focus on the animations, sounds and cool stuff!
-
-The code is in the `student_code` folder, you should work only inside that folder to complete your missions!
-
-### Mission 1
-
-- When your mouse is over any photo, make the box show a shadow around it so that the user knows that the box can be clicked
-- Useful Tip: [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
-
-### Mission 2
-
-If you want to create a really zen website, will you need sounds to create a Zen atmosphere right?
-
-- Add an event for each picture to play a [sound](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio) when you click the image
-- To add some music, you can start by adding this line for every sound you may want to play:
-  ```js
-  var yourMusicName = new Audio('yourMusicroute')`
-  ```
-- Remember all the sounds are in the `sounds` folder
-- Also will be great to make it endless, so add the attribute `loop` to your music!
-
-### Mission 3
-
-What happens if you click two images with sound at the same time? Right, the music will be mixed. Make sure to stop all the music before play a new one.
-
-- You can try to look at the [`pause()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/pause) method
-
-### Mission 4
-
-Let's make it prettier by adding a cool effect!
-
-- Add a [sepia](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia) effect to all your pictures by default
-- When you click the image, you may add a CSS class to show the original color of the image
-- Remember that you can add or remove classes with the property `classList`
-- `TIP`: This action will be in the same click event that you have created before
-
-### Mission 5
-
-- It will be nice to make the picture slightly bigger when you click it. Add a transform to scale it a little, so it will look better than before.
-- Try using the property `scale()`
-
-## Bonus
-
-- Make a button that resets all the pictures, stopping all the sounds and effects!
+---
 
 </details>
 
-<details><summary>:blue_heart: CSS responsive - flexbox</summary>
+<details><summary>
+	
+ ### 5 - CSS responsive - flexbox
+ </summary>
   	
  ## Iteration 0 - **Warm up**
 First of all, we are going to practice the flexbox basics that we have seen today in class to internalize them. And what better way to do it than with a game? We are going to access the [Flexbox Froggy](https://flexboxfroggy.com) page and we are going to complete all the levels of the game. Once the challenge is overcome, we will send a screenshot to our teacher and we will continue with the next iteration.
@@ -1377,6 +678,8 @@ Now the web page is complete, but it seems a little bit... dead. Add some `anima
 </details>
 	
 ## BLOCK 2 - BACKEND
+Tasks in Block 2:
+
 ## BLOCK 3 - FULLSTACK
 ## BUSINESS
 ## UX / UI
